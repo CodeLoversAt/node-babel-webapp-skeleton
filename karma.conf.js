@@ -16,9 +16,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'src/frontend/js/**/*.js',
-      'test/frontend/js/**/*Spec.js',
-      'src/model/**/*.js',
-      'test/model/**/*Spec.js'
+      'test/frontend/js/**/*Spec.js'
     ],
 
 
@@ -31,9 +29,7 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
         'src/frontend/js/**/*.js': ['browserify'],
-        'test/frontend/js/**/*Spec.js': ['browserify'],
-        'src/model/**/*.js': ['browserify'],
-        'test/model/**/*Spec.js': ['browserify']
+        'test/frontend/js/**/*Spec.js': ['browserify']
     },
 
     browserify: {
