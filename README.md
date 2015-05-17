@@ -9,6 +9,10 @@ Webapp sekelton with ES6 support using babel and a node.js backend
 4. If you don't have gulp installed already, do so now: `npm install -g gulp`
 5. Start it: `gulp watch`
 
+Now you can browse to [http://localhost:8888](http://localhost:8888) and enjoy it being reloaded automatically when you change your sources.
+
+Also your backend application will be restarted everytime you change any file within `src/backend`.
+
 ## Directories
 
 ### `src`
@@ -44,3 +48,13 @@ Your gulp tasks.
 ## Managing dependencies
 
 Since this skeleton uses you can leverage the power of npm for both server- and client-side dependencies. If you need a client-side module that's not available via npm, but f.e. via bower, you can use that too either via providing a shim for your browserify config (in `gulp/frontend/tasks/scripts.js`) or by putting a *browser* config to your `package.json`. Please refer to the [gulp-browserify](https://www.npmjs.com/package/gulp-browserify) and [browserify](http://browserify.org) documentations for more information.
+
+## Gulp options
+
+You can change the default host IP and port for the frontend server in `gulp/options.js`. Also you can change them when running gulp. f.e. `gulp watch --host=0.0.0.0 --port=3000`.
+
+If you provide an `--env` option with any value other than `development` (which is the default value for that option), your sources will get minified.
+
+### Change/add folder structure
+
+`gulp/backend/config.js` and `gulp/frontend/config.js` hold the configuration where the gulp tasks will look for your files and where they will put the compiled files.
