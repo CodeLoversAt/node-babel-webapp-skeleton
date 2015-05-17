@@ -1,15 +1,15 @@
 {
-  "name": "kratzom.at",
+  "name": "node-babel-webapp-skeleton",
   "version": "0.0.1",
-  "description": "Kratzom.at",
+  "description": "Webapp sekelton with ES6 support using babel and a node.js backend",
   "main": "dist/backend/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Daniel Holzmann <d@velopment.at> (https://codelovers.at)",
+  "repository": "https://github.com/CodeLoversAt/node-babel-webapp-skeleton.git",
+  "author": "Daniel Holzmann <daniel@codelovers.at> (https://codelovers.at)",
   "license": "ISC",
   "devDependencies": {
-    "angular-mocks": "^1.3.15",
     "babelify": "^6.0.2",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
@@ -38,35 +38,7 @@
     "minimist": "^1.1.1"
   },
   "dependencies": {
-    "angular": "^1.3.15",
-    "angular-sanitize": "^1.3.15",
-    "angular-ui-bootstrap": "^0.12.1",
-    "angular-ui-router": "^0.2.14",
-    "bourbon": "^4.2.3",
-    "browserify": "^10.1.3",
-    "browserify-shim": "^3.8.6",
-    "cors": "^2.6.0",
-    "express": "^4.12.3",
-    "famous-angular": "^0.4.0-3",
-    "lodash": "^3.8.0",
-    "mongodb": "^2.0.31",
-    "percolator": "^1.5.0",
-    "restangular": "^1.5.1",
-    "socket.io": "^1.3.5",
-    "socket.io-client": "^1.3.5"
-  },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
-  },
-  "browserify-shim": {
-    "restangular": {
-      "depends": [
-        "angular",
-        "lodash:_"
-      ],
-      "exports": "null"
-    }
+    "bootstrap-sass": "^3.3.4",
+    "bourbon": "^4.2.3"
   }
 }
